@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        form {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 50px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">Student Registration Form</h1>
+    <form action="" method="POST">
+        <!-- Personal Information -->
+        <h2>Personal Information</h2>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Please enter your first name!" required />
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Please enter your last name!" required />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br />
+
+        <label for="gender">Gender:</label><br />
+        <span style="border: 2px solid black; padding: 1px 2px; border-radius: 5px">
+            Male<input type="radio" name="gender" value="male" /> Female<input type="radio" name="gender"
+                value="female" />
+        </span>
+
+        <!-- Contact Information -->
+        <h2>Contact Information</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Please enter your email!" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Please enter your phone number!" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" placeholder="Please enter your address!" required></textarea>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City" required />
+
+        <label for="province">State/Province:</label>
+        <input type="text" id="province" name="province" placeholder="State/Province" required />
+
+        <label for="zip_code">Postal Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" placeholder="Postal Zip Code" required />
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" placeholder="Pakistan" required />
+
+        <!-- Emergency Contact -->
+        <h2>Emergency Contact</h2>
+        <label for="emergency_contact_name">Name:</label>
+        <input type="text" id="emergency_contact_name" name="emergency_contact_name" required />
+
+        <label for="emergency_contact_phone">Phone:</label>
+        <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone"
+            placeholder="Please enter a valid phone number." required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" />
+
+        <label for="relationship">Relationship</label>
+        <input type="text" id="relationship" name="relationship" placeholder="ex. Father, Mother, etc." required />
+
+        <!-- Academic Information -->
+        <h2>Academic Information</h2>
+        <label for="school_name">High School Name:</label>
+        <input type="text" id="school_name" name="school_name" placeholder="Please enter your high school name!"
+            required />
+
+        <label for="matric_marks">Matric Marks:</label>
+        <input type="text" id="matric_marks" name="matric_marks" placeholder="For Example: 946/1100" required />
+
+        <label for="college_name">College Name:</label>
+        <input type="text" id="college_name" name="college_name" placeholder="Please enter your college name!"
+            required />
+
+        <label for="intermediate">Intermediate:</label>
+        <select id="intermediate" name="intermediate" required>
+            <option value="-1">Please Select</option>
+            <option value="fsc_medical">F.Sc Pre-Medical</option>
+            <option value="fsc_engineering">F.Sc Pre-Engineering</option>
+            <option value="ics">Ics</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="inter_marks">Intermediate Marks:</label>
+        <input type="text" id="inter_marks" name="inter_marks" placeholder="For Example: 750/1100" required />
+
+        <h4>Extra Curricular Activities:</h4>
+        Class Moniter/CR<input type="checkbox" name="c1" value="class moniter/cr" />
+        Club/Organization<input type="checkbox" name="c2" value="club/organization" />
+        Sports<input type="checkbox" name="c3" value="sports" /><br />
+        Programming<input type="checkbox" name="c4" value="programming" />
+        Writing<input type="checkbox" name="c5" value="writing" /> Reading<input type="checkbox" name="c6"
+            value="reading" /><br />
+        Arts/Crafts<input type="checkbox" name="c7" value="arts/crafts" />
+        Others<input type="checkbox" name="c8" value="others" />
+
+        <!-- Degree Program -->
+        <h2>Degree Program</h2>
+        <label for="degree_program">Degree Program:</label>
+        <select id="degree program" name="degree_program" required>
+            <option value="-1">Please Select</option>
+            <option value="bscs">BS Computer Science</option>
+            <option value="bs_software_engineering">BS Software Engineering</option>
+            <option value="bs_civil_engineering">BS Civil Engineering</option>
+            <option value="bs_mechanical_engineering">
+                BS Mechanical Engineering
+            </option>
+            <option value="bs_electrical_engineering">
+                BS Electrical Engineering
+            </option>
+            <option value="bs_computer_engineering">BS Computer Engineering</option>
+            <option value="bs_agriculture_engineering">
+                BS Agriculture Engineering
+            </option>
+            <option value="bs_eng">BS English</option>
+            <option value="bs_phy">BS Physics</option>
+            <option value="bs_chem">BS Chemistry</option>
+            <option value="bs_bio">BS Biology</option>
+            <option value="bs_zoology">BS Zoology</option>
+            <option value="bs_botany">BS Botany</option>
+            <option value="bs_biochem">BS Biochemistry</option>
+            <option value="bs_math">BS Mathematics</option>
+            <option value="bs_acc">BS Accounting</option>
+            <option value="bs_eng">BS Finance</option>
+        </select>
+
+        <label for="interest">Interest:</label>
+        <textarea id="interest" name="interest" rows="6"></textarea><br /><br />
+
+        <label for="income">Estimate your Monthly Income:</label><br />
+        <input type="income" id="income" name="income" placeholder="Monthly Income" required /><br /><br />
+
+        <label for="scholarship">Do you have any scholarship?</label><br />
+        <span style="border: 2px solid black; padding: 1px 2px; border-radius: 5px">
+            Yes<input type="radio" name="scholarship" value="yes" /> No<input type="radio" name="scholarship"
+                value="no" /> </span><br /><br />
+
+        <label for="plan">What Is Your Plan After College?</label>
+        <select id="plan" name="plan" required>
+            <option value="-1">Please Select</option>
+            <option value="master">Take a Master Degree</option>
+            <option value="business_work">Business Work</option>
+            <option value="job">job</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="comments">Suggestions/Comments:</label>
+        <textarea id="comments" name="comments" rows="10"></textarea>
+
+        <br /><button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
